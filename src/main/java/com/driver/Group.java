@@ -1,21 +1,15 @@
 package com.driver;
 
-import java.util.List;
-
-
 public class Group {
     private String name;
     private int numberOfParticipants;
 
-    private List<User> userList;
-
-    public Group(){
-
+    public Group() {
     }
 
-    public Group(String name, List<User> userList) {
+    public Group(String name, int numberOfParticipants) {
         this.name = name;
-        this.userList = userList;
+        this.numberOfParticipants = numberOfParticipants;
     }
 
     public String getName() {
@@ -32,13 +26,5 @@ public class Group {
 
     public void setNumberOfParticipants(int numberOfParticipants) {
         this.numberOfParticipants = numberOfParticipants;
-    }
-
-    public List<User> getUserList() {
-        return userList;
-    }
-
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
     }
 }

@@ -2,7 +2,6 @@ package com.driver;
 
 import java.util.*;
 
-import com.driver.Service.WhatsappService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -87,7 +86,7 @@ public class WhatsappController {
         // This is a bonus problem and does not contains any marks
         // Find the Kth latest message between start and end (excluding start and end)
         // If the number of messages between given time is less than K, throw "K is greater than the number of messages" exception
-        return null;
-        // return whatsappService.findMessage(start, end, K);
+
+        return whatsappService.findMessage(start, end, K);
     }
 }
